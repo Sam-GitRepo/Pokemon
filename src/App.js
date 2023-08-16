@@ -1,8 +1,10 @@
 import './App.css';
+import Pokemon from './component/Pokemon';
 
 function App() {
   return (
-   <>Hello  bitch
+   <>
+   <Pokemon/>
    </>
       
    
