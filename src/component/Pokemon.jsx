@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pokemon = () => {
   return (
-    <div>Pokemon</div>
+    <div>Pokemon project</div>
   )
 }
 
