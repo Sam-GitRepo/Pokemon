@@ -32,7 +32,8 @@ const Pokemon = () => {
 
   return (
     <>
-      <header className="header">
+      <header className="header" style={{display:"flex", alignItems: "center",
+          justifyContent: "center"}}>
         <div className="content2">
           <h2>Pokemon KingDom</h2>
           <h2>Pokemon KingDom</h2>

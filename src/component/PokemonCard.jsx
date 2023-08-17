@@ -24,7 +24,7 @@ const PokemonCard = ({ url }) => {
         style={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "space-between"
         }}
       >
         <div>id -{info.id} </div>
