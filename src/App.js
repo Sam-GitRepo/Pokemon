@@ -1,13 +1,11 @@
-import './App.css';
-import Pokemon from './component/Pokemon';
+import "./App.css";
+import Pokemon from "./component/Pokemon";
 
 function App() {
   return (
-   <>
-   <Pokemon/>
-   </>
-      
-   
+    <>
+      <Pokemon />
+    </>
   );
 }
 
