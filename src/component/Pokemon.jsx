@@ -32,18 +32,18 @@ const Pokemon = () => {
 
   return (
     <>
-      <header className="header" style={{display:"flex", alignItems: "center",
-          justifyContent: "center"}}>
+      <header className="header">
         <div className="content2">
           <h2>Pokemon KingDom</h2>
           <h2>Pokemon KingDom</h2>
         </div>
       </header>
-      <main>
+
+      <main className="body-container">
         {loading ? (
           <div>Loading...</div>
         ) : (
-          <section>
+          <section className="card-container">
             {pokemon &&
               pokemon.map(({ url }, i) => {
                 return <PokemonCard url={url} key={i} />;
@@ -51,7 +51,9 @@ const Pokemon = () => {
           </section>
         )}
         <div>
-          <button onClick={morePokemon}>More Pokemon</button>
+          <button className="load-more" onClick={morePokemon}>
+            More Pokemon
+          </button>
         </div>
       </main>
     </>
