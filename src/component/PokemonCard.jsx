@@ -19,6 +19,7 @@ const PokemonCard = ({ url }) => {
 
   useEffect(() => {
     fetchPokemonInfo();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const knowMorePokemon = () => {

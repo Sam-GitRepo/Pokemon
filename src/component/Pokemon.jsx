@@ -25,6 +25,7 @@ const Pokemon = () => {
     fetchPokemon(
       "https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1"
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const morePokemon = () => {
