@@ -13,6 +13,7 @@ const PokemonCardDetails = () => {
         <section className="pokemon-info-container">
           <div className="column-1">
             
+            
           </div>
 
 
