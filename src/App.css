@@ -1,11 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  /* background: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  ); */
 }
 
 body {
-  background-color: #b2c397;
+  background-color: #000000;
 }
 
 .grass {
@@ -56,6 +69,93 @@ body {
   background: linear-gradient(145deg, #e6b980 0%, #eacda3 100%);
 }
 
+.header-container {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: #ddd;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.header-part-1,
+.header-part-2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+.header-part-1 h1 {
+  right: 5%;
+  position: absolute;
+  color: white;
+}
+.header-part-1 h1:nth-child(1) {
+  /* align-self: center; */
+  color: transparent;
+  -webkit-text-stroke: 2px #ddd;
+}
+
+.header-part-1 h1:nth-child(2) {
+  color: #ddd;
+  animation: animate 4s ease-in-out infinite;
+}
+
+.header-part-2 h1 {
+  right: 5%;
+  position: absolute;
+  color: black;
+}
+
+.header-part-2 h1:nth-child(1) {
+  /* align-self: center; */
+  color: transparent;
+  -webkit-text-stroke: 2px #ddd;
+}
+
+.header-part-2 h1:nth-child(2) {
+  color: #ddd;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
 .body-container {
   display: flex;
   flex-direction: column;
@@ -80,11 +180,13 @@ body {
   border-radius: 0.25rem;
   text-align: center;
   transition: transform 0.25s ease-in-out;
+  /* max-height: 18rem; */
 }
 
 .pokemon-card:hover {
   transform: scale(1.25);
   z-index: 1;
+  /* border: 1px solid #fff; */
   outline: 1px solid #fff;
 }
 
@@ -99,7 +201,6 @@ body {
   text-transform: uppercase;
   padding-top: 1rem;
 }
-
 .load-more {
   width: 12rem;
   padding: 1rem 1.5rem;
@@ -142,20 +243,20 @@ body {
   cursor: pointer;
 }
 
-.modal-wrapper{
+.modal-wrapper {
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   z-index: 2;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-container{
+.modal-container {
   padding: 1rem;
   display: flex;
   width: 50%;
@@ -164,40 +265,43 @@ body {
   border-radius: 0.25rem;
 }
 
-.pokemon-info-container{
+.pokemon-info-container {
   padding: 1rem;
   display: flex;
   gap: 1rem;
   background: linear-gradient();
 }
 
-.stat-container{
+.stat-container {
   display: flex;
   gap: 1rem;
   padding: 1rem;
 }
 
-.column-1, .column-2, .column-3, .column-4{
+.column-1,
+.column-2,
+.column-3,
+.column-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
 
-.column-1{
+.column-1 {
   align-items: center;
 }
 
-.column-1 img{
+.column-1 img {
   width: 10rem;
   height: 10rem;
 }
-.column-1 h3{
+.column-1 h3 {
   text-decoration: underline;
   font-size: 1.2rem;
 }
 
-.close-modal{
+.close-modal {
   align-self: flex-start;
   width: 3rem;
   height: 3rem;

@@ -33,16 +33,22 @@ const Pokemon = () => {
 
   return (
     <>
-      <header className="header">
-        <div className="content2">
-          <h2>Pokemon KingDom</h2>
-          <h2>Pokemon KingDom</h2>
+      <header className="header-container">
+        <div className="header-part-1">
+          <h1>Pokemon</h1>
+          <h1 className="second-h2">Pokemon</h1>
+        </div>
+        <div className="header-part-2">
+          <h1>KingDom</h1>
+          <h1 className="second-h2">KingDom</h1>
         </div>
       </header>
 
       <main className="body-container">
         {loading ? (
-          <div>Loading...</div>
+          <div style={{color:"wheat"}}>
+            <h4>Loading....</h4>
+          </div>
         ) : (
           <section className="card-container">
             {pokemon &&
@@ -62,3 +68,4 @@ const Pokemon = () => {
 };
 
 export default Pokemon;
+
