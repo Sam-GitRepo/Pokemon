@@ -12,14 +12,15 @@ const Pokemon = () => {
       const response = await fetch(url);
       const data = await response.json();
       console.log(data[0]);
-      setPokemon(data[0].results);
-      setNextUrl(...Pokemon, ...data[0].next);
+      setPokemon([...pokemon, ...data[0].results]);
+      setNextUrl(data[0].next);
     } catch (err) {
       console.log(err);
     } finally {
       setLoading(false);
     }
   };
+
   useEffect(() => {
     fetchPokemon(
       "https://content.newtonschool.co/v1/pr/64ccef982071a9ad01d36ff6/pokemonspages1"

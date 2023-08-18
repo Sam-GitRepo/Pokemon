@@ -26,7 +26,7 @@ function App() {
         >
           <Pokemon />
           {model && (
-            <div>
+            <div className="modal-wrapper">
               <PokemonCardDetails />
             </div>
           )}
