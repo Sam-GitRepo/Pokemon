@@ -31,7 +31,7 @@ const PokemonCard = ({ url }) => {
     <>
       <section className={`pokemon-card ${info.type}`}>
         <div className="number">#{info.id} </div>
-        <img src={info.image} alt={`image of ${info.name}`} />
+        <img src={info.image} alt={`pic of ${info.name}`} />
         <div className="char-name">{info.name} </div>
         <div className="char-type">Type: {info.type} </div>
         <button

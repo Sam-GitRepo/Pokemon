@@ -13,7 +13,7 @@ const PokemonCardDetails = () => {
     <aside className={`modal-container ${type}`}>
       <section className="pokemon-info-container">
         <div className="column-1">
-          <img src={image} alt={`image of ${name}`} />
+          <img src={image} alt={`pic of ${name}`} />
           <h3>{name} </h3>
         </div>
         <div className="column-2">
